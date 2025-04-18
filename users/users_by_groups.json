@@ -1,17 +1,17 @@
 {
-    "displayName": "List users by patron group",
-    "description": "Created by Clay Oldham to test Reporting App",
+    "displayName": "Users by Group and Active Status",
+    "description": "Created by Clay Oldham to test Reporting app",
     "instructions": "Choose a start and end date.",
     "parameters": [
         {
             "name": "start_date",
-            "displayName": "Start Date",
+            "displayName": "Earliest date",
             "type": "date",
             "required": false
         },
         {
             "name": "end_date",
-            "displayName": "End Date",
+            "displayName": "Latest date",
             "type": "date",
             "required": false
         }

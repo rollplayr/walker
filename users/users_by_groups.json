@@ -2,4 +2,18 @@
     "displayName": "List users by patron group",
     "description": "Created by Clay Oldham to test Reporting App",
     "instructions": "Choose a start and end date for the user-creation period."
+    "parameters": [
+        {
+            "name": "start_date",
+            "displayName": "Start Date",
+            "type": "date",
+            "required": false
+        },
+        {
+            "name": "end_date",
+            "displayName": "End Date",
+            "type": "date",
+            "required": false
+        }
+    ]
 }

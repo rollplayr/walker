@@ -1,4 +1,5 @@
 {
-    "displayName": "Users by Group and Active Status",
-    "description": "Created by Clay Oldham to test join query in Reporting app"
+    "displayName": "List users by groups and active status",
+    "description": "Created by Clay Oldham testing join query in Reporting app",
+    "parameters": []
 }

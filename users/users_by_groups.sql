@@ -5,7 +5,7 @@ CREATE FUNCTION users_by_groups(
     end_date date DEFAULT '2050-01-01'
 )
 RETURNS TABLE(
-    g.id text,
+    id text,
     active_users integer,
     non_active_users integer)
 AS $$

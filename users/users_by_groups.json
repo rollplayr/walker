@@ -1,19 +1,4 @@
 {
     "displayName": "Users by Group and Active Status",
-    "description": "Created by Clay Oldham to test Reporting app",
-    "instructions": "Choose a start and end date.",
-    "parameters": [
-        {
-            "name": "start_date",
-            "displayName": "Earliest date",
-            "type": "date",
-            "required": false
-        },
-        {
-            "name": "end_date",
-            "displayName": "Latest date",
-            "type": "date",
-            "required": false
-        }
-    ]
+    "description": "Created by Clay Oldham to test join query in Reporting app"
 }

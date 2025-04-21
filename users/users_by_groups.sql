@@ -5,9 +5,10 @@ CREATE FUNCTION users_by_groups(
     end_date date DEFAULT '2050-01-01'
 )
 RETURNS TABLE(
-    id uuid,
+    patron_group desc,
     active_users integer,
-    non_active_users integer)
+    non_active_users integer,
+    total_users integer)
 AS $$
  SELECT
    g.desc as patron_group,

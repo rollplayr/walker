@@ -1,9 +1,6 @@
 --metadb:function users_by_groups
 
-CREATE FUNCTION users_by_groups(
-    start_date date DEFAULT '2000-01-01',
-    end_date date DEFAULT '2050-01-01'
-)
+CREATE FUNCTION users_by_groups
 RETURNS TABLE(
     patron_group desc,
     active_users integer,

@@ -1,11 +1,14 @@
 --metadb:function users_by_groups
 
-CREATE FUNCTION users_by_groups
+DROP FUNCTION IF EXISTS users_by_groups;
+
+CREATE FUNCTION users_by_groups()
+    
 RETURNS TABLE(
-    patron_group desc,
-    active_users integer,
-    non_active_users integer,
-    total_users integer)
+    patron_group TEXT,
+    active_users INTEGER,
+    non_active_users INTEGER,
+    total_users INTEGER)
 AS $$
  SELECT
    g.desc as patron_group,

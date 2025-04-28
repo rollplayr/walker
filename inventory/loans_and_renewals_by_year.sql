@@ -3,11 +3,31 @@
 DROP FUNCTION IF EXISTS loans_and_renewals_by_year;
 
 CREATE FUNCTION loans_and_renewals_by_year()
---RETURNS TABLE(
-    --patron_group TEXT,
-    --active_users INTEGER,
-    --non_active_users INTEGER,
-    --total_users INTEGER)
+RETURNS TABLE(
+    item TEXT,
+    item_barcode INTEGER,
+    instance_title TEXT,
+    item_created_date TIMESTAMPTZ,
+    item_age TEXT,
+    item_material_type TEXT,
+    item_permanent_location TEXT,
+    item_temporary_location TEXT,
+    item_efffective_location TEXT,
+    item_effective_location_code TEXT,
+    item_call_number TEXT,
+    item_effective_shelving_order TEXT,
+    item_effective_call_number TEXT,
+    item_effective_call_number_prefix TEXT,
+    item_effective_call_number_suffix TEXT,
+    loans_current_year_minus_2 INTEGER,
+    renewals_current_year_minus_2 INTEGER,
+    loans_current_year_minus_1 INTEGER,
+    renewals_current_year_minus_1 INTEGER,
+    loans_current_year INTEGER,
+    renewals_current_year INTEGER,
+    all_loans INTEGER,
+    all_renewals INTEGER,
+    sum_of_loans_renewals INTEGER)
 AS $$
 WITH loans_current_year_minus_2 AS (
     SELECT    

@@ -5,14 +5,14 @@ DROP FUNCTION IF EXISTS loans_and_renewals_by_year;
 CREATE FUNCTION loans_and_renewals_by_year()
 RETURNS TABLE(
     item TEXT,
-    item_barcode INTEGER,
+    item_barcode TEXT,
     instance_title TEXT,
     item_created_date TIMESTAMPTZ,
     item_age TEXT,
     item_material_type TEXT,
     item_permanent_location TEXT,
     item_temporary_location TEXT,
-    item_efffective_location TEXT,
+    item_effective_location TEXT,
     item_effective_location_code TEXT,
     item_call_number TEXT,
     item_effective_shelving_order TEXT,

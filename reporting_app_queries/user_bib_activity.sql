@@ -63,7 +63,7 @@ SELECT
 
 FROM folio_users.users__t u
 LEFT JOIN instance_ext i ON (i.created_by_user_id = u.id OR i.updated_by_user_id = u.id)
-LEFT JOIN holding_ext h ON (h.created_by_user_id = u.id OR h.updated_by_user_id = u.id)
+LEFT JOIN holdings_ext h ON (h.created_by_user_id = u.id OR h.updated_by_user_id = u.id)
 LEFT JOIN item_ext it ON (it.created_by_user_id = u.id OR it.updated_by_user_id = u.id)
 
 WHERE (username_filter IS NULL OR u.username ILIKE username_filter)

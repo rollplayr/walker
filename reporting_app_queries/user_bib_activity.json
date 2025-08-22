@@ -1,0 +1,27 @@
+{
+  "displayName": "User bibliographic activity (instances, holdings, items)",
+  "description": "Counts of instances, holdings, and items created and modified by users, filterable by user and date range.",
+  "parameters": [
+    {
+      "name": "user_filter",
+      "type": "uuid",
+      "label": "Select User",
+      "input": "dropdown",
+      "source": "folio_users.users__t",
+      "sourceLabel": "username",
+      "sourceValue": "id"
+    },
+    {
+      "name": "start_date",
+      "type": "timestamp",
+      "label": "Start Date",
+      "input": "date"
+    },
+    {
+      "name": "end_date",
+      "type": "timestamp",
+      "label": "End Date",
+      "input": "date"
+    }
+  ]
+}

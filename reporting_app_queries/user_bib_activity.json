@@ -1,24 +1,25 @@
 {
   "displayName": "(TESTING) User bibliographic activity (instances, holdings, items)",
-  "description": "Counts of instances, holdings, and items created and modified by users, filterable by username and date range.",
+  "description": "(TESTING) Counts of instances, holdings, and items created and modified by users, filterable by username and date range.",
+  "instructions": "Enter a username (optional) and choose a start and end date for the activity period.",
   "parameters": [
     {
       "name": "username_filter",
+      "displayName": "Username",
       "type": "text",
-      "label": "Username",
-      "input": "text"
+      "required": false
     },
     {
       "name": "start_date",
+      "displayName": "Earliest activity date",
       "type": "date",
-      "label": "Start Date",
-      "input": "date"
+      "required": false
     },
     {
       "name": "end_date",
+      "displayName": "Latest activity date",
       "type": "date",
-      "label": "End Date",
-      "input": "date"
+      "required": false
     }
   ]
 }
